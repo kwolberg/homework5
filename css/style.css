@@ -55,16 +55,21 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
-
+  from{width: 25px;}
+  to{height: 420px;} 
 }
 
 @keyframes logo_wiggle{
-  /*Your code here.*/
+  from{width: 25px;}
+  to{height: 420px;}
 
 } 
 
 #logo{
    /*Your code here.*/
+   animation-name: logo_wiggle;
+   animation-duration: 15s;
+   animation-iteration-count: 1;
  
 }
 
@@ -73,6 +78,10 @@ footer{
     min-height: 500px;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: center;
+    align-items: center;
   
 }
 
@@ -83,6 +92,11 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
+  display: flex; 
+  flex-basis: 400px;
+  flex-flow: column;
+  
+
 
 }
 
@@ -128,7 +142,10 @@ footer{
 /* Gallery! */
 .gallery{
   min-height: 600px;
-  /*Your code here again.*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .gallery > img{
@@ -141,11 +158,17 @@ footer{
 header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-  /*Your  code here again.*/
+  justify-content: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav_item a{
