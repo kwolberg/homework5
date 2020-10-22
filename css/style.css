@@ -141,8 +141,10 @@ footer{
 .gallery{
   min-height: 600px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .gallery > img{
@@ -223,7 +225,27 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  .gallery{
+    display: none;
+  }
+  #gallery{
+    display: none;
+  }
+
 }
 
+@media (prefers-reduced-motion: reduced) {
+  #logo {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+}
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
